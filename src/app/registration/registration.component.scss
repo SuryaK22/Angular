@@ -1,0 +1,32 @@
+.row-form{
+    width:100%;
+    display: flex;
+}
+.form-field{
+    width: 50%;
+}
+.form-control{
+    width:95%;
+}
+.main-container{
+    background-image: url(../../assets/background.PNG);
+    background-size: 100%,100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+.form-card{
+    width: 30%;
+    background-color: white;
+    padding: 30px;
+    margin-left: 100px; 
+    border-radius: 10px;  
+}
+.form-box{
+    padding-top: 10px;
+}
+.form-label{
+font-size:large;
+font-family: 'Courier New', Courier, monospace;
+font-weight:bold;
+}

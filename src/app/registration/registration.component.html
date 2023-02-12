@@ -1,0 +1,59 @@
+<div class="main-container">
+    <div class="form-card">
+        <div class="signUp">
+            <div class="text-center">
+                <h1>Sign Up</h1>
+                <h6>Register Yourself !!</h6>
+            </div>
+            <form class="form-box">
+                <div class="mb-3 row-form">
+                    <div class="form-field">
+                        <label class="form-label">First Name :</label>
+                        <input type="text" [(ngModel)]="firstName" class="form-control" id="firstName" name="firstName">
+                    </div>
+                    <div class="form-field">
+                        <label class="form-label">Last Name :</label>
+                        <input type="text" [(ngModel)]="lastName" class="form-control" id="lastName" name="lastName">
+                    </div>
+
+                </div>
+                <div class="mb-3 row-form">
+                    <div class="form-field">
+                        <label class="form-label">Mobile Number :</label>
+                        <input type="text" [(ngModel)]="mobileNumber" class="form-control" id="mobileNumber" name="mobileNumber">
+                    </div>
+                    <div class="form-field">
+                        <label class="form-label">Email address :</label>
+                        <input type="email" [(ngModel)]="emailAddress" class="form-control" id="emailAddress" name="emailAddress">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label"> Choose Your Gender :</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="male-check" value="Male" [(ngModel)]="gender"checked name="gender">
+                        <label class="form-check-label">
+                            Male
+                        </label>
+                    </div>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="female-check" value="Female" [(ngModel)]="gender" name="gender">
+                    <label class="form-check-label">
+                        Female
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">New Password :</label>
+                    <input type="password" [(ngModel)]="newPassword" class="form-control" id="setPassword" name="newPassword">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Confirm Password :</label>
+                    <input type="password" [(ngModel)]="confirmPassword" class="form-control" id="confirmPassword" name="confirmPassword">
+                </div>
+
+                <button type="submit" class="btn btn-primary" (click)="saveForm()">Sign Up</button>
+            </form>
+      
+        </div>
+    </div>
+</div>
